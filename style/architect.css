@@ -12,9 +12,32 @@ box-sizing: border-box;
   .bg_light{
     background-color:  rgba(255, 144, 14, 0.1);
   }
+  .primary_btn{
+    background-color: rgb(255, 144, 14);
+    border-radius: 8px;
+    padding:18px 24px;
+    border:none;
+    font-size: 1.5;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+    cursor: pointer;
+      }
+      .title{
+        font-size: 2.8rem;
+        font-weight: 700;
+      }
+      .des{
+        color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top:20px;
+  margin-bottom: 30px;
+      }
   /* banner */
   .header_section{
-    max-width:1200px;
+    /* max-width:1200px; */
   }
   .nav_section{
     display: flex;
@@ -42,7 +65,7 @@ list-style: none;
     /* border:1px solid blue; */
   }
   .nav_section , .banner_container{
-    max-width: 80%;
+    max-width:1200px;
     margin: 0 auto;
   }
   .banner_img{
@@ -67,24 +90,61 @@ list-style: none;
     font-weight: 400;
     line-height: 1.5rem;
     margin:20px 0;
+  }
 
+
+  /* main_section */
+  main>section{
+    max-width:1200px;
+    margin:0 auto;
+    margin-top:130px;
   }
-  .banner_btn{
-background-color: rgb(255, 144, 14);
-border-radius: 8px;
-padding:18px 24px;
-border:none;
-font-size: 1.5;
-font-weight: 600;
-color: white;
-margin-bottom: 30px;
-cursor: pointer;
+  .feature_container{
+    display:flex;
+    align-items: center;
   }
+  .feature_image{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+  }
+  .feature_image{
+    max-width:100%;
+  }
+  .feature_text{
+    margin-left: 60px;
+  }
+  .feature_title{
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  #quick_list{
+    font-weight:500;
+    color:rgb(114, 114, 114);
+  }
+  .features{
+    color:rgb(255, 144, 14);
+  }
+.feature_des{
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top:20px;
+  margin-bottom: 30px;
+}
   /* responsive media query */
   @media screen and (max-width:576px) {
     .nav_section , .banner_container , .nav_option{
         flex-direction: column;
         gap:10px;
+
     }
+.feature_container{
+flex-direction: column;
+}
+.feature_image{
+  grid-template-columns: 1fr;
+}
   }
   
